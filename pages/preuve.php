@@ -4,7 +4,7 @@
             <h2>Rajouter une preuve de dépense: </h2>
 
             <label for="intitule">Intitulé:</label>
-            <input name="intitule" id="intitule" value="" type="text">
+            <input name="intitule" id="intitule" value="" type="text" placeholder="Ex: Plein d'essence...">
 
             <label for="date">Date de dépense:</label>
             <input name="date" id="date" value="" type="date">
@@ -15,7 +15,10 @@
             <label for="photo">Preuve photo:</label>
             <input name="photo" id="photo" value="" type="file">
 
-            <button type="submit">Enregistrer</button>
+            <label for="description">Description (Facultatif):</label>
+            <textarea cols="40" rows="8" name="description" id="description"></textarea>
+
+            <button type="submit" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Enregistrer</button>
         </form>
     </div>
 
