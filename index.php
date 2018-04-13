@@ -12,6 +12,7 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
+    <?php include('connectAD.php'); ?>
     <?php include('pages/index.php'); ?>
 
     <?php include('pages/settings.php'); ?>
