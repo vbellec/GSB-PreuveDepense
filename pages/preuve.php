@@ -1,6 +1,6 @@
 <div data-role="page" id="preuve">
     <div role="main" class="ui-content">
-        <form method="POST" action="/preuve">
+        <form method="POST" action="/includes/create_preuve.php" enctype="multipart/form-data">
             <h2>Rajouter une preuve de dépense: </h2>
 
             <label for="intitule">Intitulé:</label>
@@ -13,7 +13,7 @@
             <input name="depense" pattern="[0-9]*" id="depense" type="number" placeholder="Prix en €" >
         
             <label for="photo">Preuve photo:</label>
-            <input name="photo" id="photo" value="" type="file">
+            <input name="photo" id="photo" type="file">
 
             <label for="description">Description (Facultatif):</label>
             <textarea cols="40" rows="8" name="description" id="description"></textarea>
