@@ -1,6 +1,6 @@
 <div data-role="page" id="preuve">
     <div role="main" class="ui-content">
-        <form method="POST" action="/includes/create_preuve.php" enctype="multipart/form-data">
+        <form id="form-preuve" method="POST" action="includes/create_preuve.php" enctype="multipart/form-data">
             <h2>Rajouter une preuve de dépense: </h2>
 
             <label for="intitule">Intitulé:</label>
@@ -23,4 +23,5 @@
     </div>
 
     <?php include('includes/footer.php'); ?>
+    <script src="js/preuve.js"></script>
 </div>

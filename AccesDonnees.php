@@ -105,7 +105,7 @@ function connexion($host,$port,$dbname,$user,$password) {
 			
 		try
 		{
-			$connexion = new PDO($dsn, $user, $password);
+			$connexion = new PDO($dsn, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 		}
 			
 		catch(Exception $e)
