@@ -1,3 +1,14 @@
+/**
+ * Promisify AJAX request
+ * 
+ * @see https://developer.mozilla.org/fr/docs/Web/API/XMLHttpRequest
+ * @async
+ * @function ajaxPromise
+ * @param {!string} method HTTP verb of the request
+ * @param {!string} url URL of the request
+ * @param {FormData|undefined} paramsData Data to send
+ * @returns {Promise} Result of the request
+ */
 const ajaxPromise = function (method, url, paramsData) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -23,13 +34,5 @@ const ajaxPromise = function (method, url, paramsData) {
     } else {
       xhr.send();
     }
-  });
-};
-
-const ajaxGetJSONPromise = function (url) {
-  return new Promise((resolve, reject) => {
-    ajaxGetPromise(url)
-      .then(data => resolve(JSON.parse(data)))
-      .catch(err => reject(err));
   });
 };
